@@ -1,0 +1,9 @@
+/* Button.css */
+.my-button {
+  background-color: #add8e6;
+  border: none;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
