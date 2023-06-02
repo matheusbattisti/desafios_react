@@ -1,0 +1,21 @@
+$card-background-color: #f8f9fa;
+$card-border-color: #e9ecef;
+$card-radius: 5px;
+
+.card {
+  background-color: $card-background-color;
+  border: 1px solid $card-border-color;
+  border-radius: $card-radius;
+  padding: 20px;
+  margin: 20px 0;
+
+  .card-header {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .card-body {
+    font-size: 1em;
+  }
+}
