@@ -1,0 +1,62 @@
+{
+  "name": "testes_em_react",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "test": "jest --watch"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "transform": {
+      "\\.[jt]sx?$": "babel-jest"
+    },
+    "setupFiles": [
+      "./setupJest.js"
+    ],
+    "setupFilesAfterEnv": [
+      "@testing-library/jest-dom/extend-expect"
+    ]
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.22.5",
+    "@babel/preset-react": "^7.22.5",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
+    "@types/react": "^18.0.37",
+    "@types/react-dom": "^18.0.11",
+    "@vitejs/plugin-react": "^4.0.0",
+    "babel-jest": "^29.5.0",
+    "eslint": "^8.38.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.3.4",
+    "install": "^0.13.0",
+    "jest": "^29.5.0",
+    "jest-environment-jsdom": "^29.5.0",
+    "jest-fetch-mock": "^3.0.3",
+    "npm": "^9.7.1",
+    "vite": "^4.3.9"
+  }
+}
